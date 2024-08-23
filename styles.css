@@ -37,6 +37,7 @@ button {
     cursor: pointer;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 10px;  /* Add space between buttons */
 }
 
 button:hover {
