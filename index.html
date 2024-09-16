@@ -1,20 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Color Palette Generator</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="controls">
-        <label for="colorCount">Number of Colors (2-7):</label>
-        <input type="number" id="colorCount" min="2" max="7" value="5">
-        <button id="generate">Generate Palette</button>
-        <button id="export">Export as SVG</button>
-    </div>
-    <div class="palette" id="palette"></div>
 
+<body>
+    <header class="bg-dark text-white text-center py-3 mb-4" style="position: absolute; left: 0; right: 0; top: 0;">
+        <h3>🎲 Random Color Palette Generator 🎨</h3>
+    </header>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <div class="controls form-inline justify-content-center mb-4" style="scale: 0.8;">
+                    <label for="colorCount" class="mr-2">Number of Colors (2-7):</label>
+                    <input type="number" id="colorCount" min="2" max="7" value="5" class="form-control mr-2">
+                    <button id="generate" class="btn btn-dark">Generate Palette</button>
+                    <button id="export" class="btn btn-dark ml-2">Export as SVG</button>
+                </div>
+
+                <!-- Sticky Dark Mode Toggle Button -->
+                <button id="darkModeToggle" class="btn btn-secondary mb-4 sticky-toggle">
+                    <i id="darkIcon" class="fas fa-moon"></i>
+                </button>
+
+                <div class="palette d-flex justify-content-center" id="palette"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-4"
+        style="position: absolute; left: 0; right: 0; bottom: 0; font-size: smaller;">
+        <p>Kasun Miuranga © 2024 All Rights Reserved</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies (jQuery and Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
