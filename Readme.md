@@ -2,6 +2,10 @@
 
 This is a simple web-based tool to generate random color palettes with 2 to 7 colors. You can export the generated palette as an SVG file and toggle between light and dark modes using a sticky button to see how colors look in different themes.
 
+## Demo
+
+🔗 https://themiu.github.io/random-color-palette-generator-with-svg-export/
+
 ## Features
 
 - Generate random color palettes of 2 to 7 colors.
